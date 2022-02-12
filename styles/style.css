@@ -446,6 +446,10 @@ height: 24px;
   line-height: 20px;
   text-decoration: none;
 }
+.footer__column-link:hover{
+  color:#c1c1c1 ;
+}
+
 .footer__main{
   
   margin: auto;
@@ -459,5 +463,8 @@ height: 24px;
 }
 
 .footer__copyrights {
+}
+.fa-instagram-square{
+  color: #838383;
 }
   }
