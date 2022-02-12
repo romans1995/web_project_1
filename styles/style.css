@@ -4,7 +4,11 @@
   .page {
     margin: auto;
   }
-
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
   .header_container {
     display: flex;
   }
