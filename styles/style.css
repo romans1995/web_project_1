@@ -1,5 +1,3 @@
-/* Add your class here */
-
 
 .page {
   margin: auto;
@@ -9,10 +7,6 @@
   font-size: 16px;
   line-height: 20px;
 }
-
-/* removed body tag  */
-
-
 
 .header {
   height: 100vh;
@@ -26,7 +20,6 @@
 }
 
 .nav {
-  /* Add flex properties here */
   display: flex;
   justify-content: space-between;
 }
@@ -49,7 +42,7 @@
   font-weight: bold;
 }
 
-/* Add the hover state styles for .nav__link here */
+
 .nav__link:hover {
   color: #1f69c9;
   /*changed*/
