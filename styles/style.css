@@ -1,16 +1,11 @@
-/* Add your class here */
-
 .page {
     margin: auto;
     min-width: 1100px;
-    max-width: 2600px;
+    max-width: 1600px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 20px;
 }
-
-
-/* removed body tag  */
 
 .header {
     height: 100vh;
@@ -24,7 +19,6 @@
 }
 
 .nav {
-    /* Add flex properties here */
     display: flex;
     justify-content: space-between;
 }
@@ -179,11 +173,6 @@
     box-sizing: border-box;
 }
 
-.fa-solid .fa-calendar {
-    width: 24px;
-    height: 24px;
-}
-
 .events__content {
     flex-basis: 580px;
 }
@@ -217,10 +206,14 @@
     font-weight: 500;
 }
 
-.event-info__icon {
+.event__info-column {
     background-repeat: no-repeat;
     background-position: center;
-    margin-right: 12px;
+    display: flex;
+}
+
+.event__info-img {
+    padding-right: 10px;
 }
 
 .event-info__icon_calendar {
@@ -446,6 +439,10 @@
     margin: 0;
 }
 
+.footer__list-item {
+    padding-bottom: 16px;
+}
+
 .footer__item {
     color: white;
     font-size: 16px;
@@ -470,8 +467,16 @@
     padding-bottom: 60px;
 }
 
+.footer__column_type_hours {
+    padding-right: 100px;
+}
+
 .footer__column_type_social {
     position: relative;
     color: #ffffff;
     list-style-type: none;
+}
+
+.footer__column_type_img {
+    flex: 1 0 auto;
 }
