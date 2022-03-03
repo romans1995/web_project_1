@@ -35,7 +35,6 @@
 }
 
 .nav__link {
-    padding: 10px;
     color: #000000;
     text-decoration: none;
     font-weight: bold;
@@ -55,6 +54,8 @@
     font-weight: 500;
     line-height: 76px;
     margin: 150px 0 0;
+    position: relative;
+    z-index: 1;
 }
 
 .header__description {
@@ -62,6 +63,8 @@
     font-size: 20px;
     line-height: 30px;
     margin: 32px 0 0;
+    position: relative;
+    z-index: 1;
 }
 
 .header__image {
@@ -92,6 +95,7 @@
 /* Add the hover state styles for .header__link here */
 
 .header__address {
+    margin: 0;
     color: #838383;
 }
 
@@ -206,13 +210,13 @@
     font-weight: 500;
 }
 
-.event__info-column {
+.event-info__column {
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
 }
 
-.event__info-img {
+.event-info__img {
     padding-right: 10px;
 }
 
@@ -314,7 +318,6 @@
     padding-top: 100px;
     padding-bottom: 140px;
     background-color: #f2f2f2;
-    margin-bottom: -60px;
 }
 
 .membership__title {
@@ -328,15 +331,13 @@
 
 .membership__steps {
     list-style-type: none;
-    margin: 100px 0 0;
     display: flex;
-    padding-left: 290px;
+    justify-content: center;
+    gap: 40px;
 }
 
 .step {
     width: 220px;
-    margin-right: 30px;
-    padding-right: 10px;
 }
 
 .step__title {
@@ -363,8 +364,7 @@
     overflow: hidden;
     position: relative;
     box-sizing: border-box;
-    z-index: -1;
-    top: 58px;
+    z-index: 0;
 }
 
 .about__title {
@@ -372,6 +372,11 @@
     line-height: 30px;
     font-weight: 500;
     z-index: 1;
+}
+
+.about__paragraph {
+    margin: 0;
+    padding-top: 32px;
 }
 
 .about__content {
@@ -407,7 +412,7 @@
     justify-content: space-around;
     align-content: stretch;
     padding: 102px;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .footer__column_hours {
@@ -426,10 +431,21 @@
     flex-wrap: nowrap;
 }
 
+.footer__social-icon {
+    margin-right: 5px
+}
+
+.footer__column-heading {
+    margin: 0;
+    margin-bottom: 4px;
+}
+
 .footer__logo {
     order: 0;
     flex: 0 1 auto;
     align-self: auto;
+    width: 152px;
+    height: 32px;
 }
 
 .footer__list {
@@ -439,8 +455,13 @@
     margin: 0;
 }
 
+.footer__list-link {
+    color: #ffff;
+    text-decoration: none;
+}
+
 .footer__list-item {
-    padding-bottom: 16px;
+    padding-top: 16px;
 }
 
 .footer__item {
@@ -463,6 +484,7 @@
 }
 
 .footer__copyrights {
+    margin: 0;
     padding-left: 120px;
     padding-bottom: 60px;
 }
